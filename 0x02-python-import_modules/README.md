@@ -1,1 +1,1 @@
-These are "if...else" statements done in python programming language
+These are import & modules functions done in python programming language
