@@ -4,4 +4,4 @@ if _name_ == "_main_":
 
     a = 1
     b = 2
-    print("{} + {} = {}".formar(a, b, add(a, b)))
+    print("{} + {} = {}".format(a, b, add(a, b)))
