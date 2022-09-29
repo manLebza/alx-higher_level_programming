@@ -1,5 +1,5 @@
 #!/usr/bin/pyhton3
-if _name_ == "_main_":
+if __name__ == "__main__":
     import sys
 
     nargs = len(sys.argv) - 1
