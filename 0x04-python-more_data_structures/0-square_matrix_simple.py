@@ -1,10 +1,14 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-
-    new_matrix = matrix(list(map(lambda x, y: x**2, squared)))
+    squared2 = []
 
     for i in range(len(matrix)):
-        new_matrix = [x**2 for i in matrix[i]]
+        squared = []
 
-    return (new_matrix)
+        for j in range(len(matrix[i])):
+            squared.append(matrix[i][j] **2)
+
+        squared2.append(squared)
+
+    return (squared2)
 
