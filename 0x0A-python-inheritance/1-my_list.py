@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Module prints out list """
+""" module prints out list """
 
 
 class MyList(list):
