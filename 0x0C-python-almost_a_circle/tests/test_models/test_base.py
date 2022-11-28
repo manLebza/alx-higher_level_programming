@@ -84,8 +84,8 @@ class TestBaseMethods(unittest.TestCase):
         res = "[]\n"
         with open("Rectangle.json", "r") as file:
             with patch('sys.stdout', new=StringIO()) as str_out:
-                    print(file.read())
-                    self.assertEqual(str_out.getvalue(), res)
+                print(file.read())
+                self.assertEqual(str_out.getvalue(), res)
 
         try:
             os.remove("Rectangle.json")

@@ -4,10 +4,10 @@ import json
 import csv
 import os.path
 
+
 class Base:
     """ Class Base Case """
     __nb_objects = 0
-
 
     def __init__(self, id=None):
         """ Initialize instances """
@@ -115,7 +115,7 @@ class Base:
             reader = csv.reader(readFile)
             csv_list = list(reader)
 
-        if cls.__name__ = "Rectangle":
+        if cls.__name__ == "Rectangle":
             list_keys = ['id', 'width', 'height', 'x', 'y']
         else:
             list_keys = ['id', 'size', 'x', 'y']

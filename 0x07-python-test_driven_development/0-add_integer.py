@@ -3,7 +3,8 @@
 this module is composed by a function that adds two numbers
 """
 
-def add_integer(a, b = 98):
+
+def add_integer(a, b=98):
     """ function adds two integers and/or a float type
     args:
         a: frist num
