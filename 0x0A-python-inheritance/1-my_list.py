@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" Module prints out list """
+
+
 class MyList(list):
     """ class inherits attribute references of a class list
     args:
