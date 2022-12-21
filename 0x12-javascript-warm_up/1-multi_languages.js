@@ -1,4 +1,3 @@
 #!/usr/bin/node
-console.log('"C is fun"\n');
-console.log('"Python is cool"\n');
-console.log('"JavaScript is amazing"\n');
+const myVar = '"C is fun"\n"Python is Cool"\n"JavaScript is amazing"\n';
+console.log(myVar);
