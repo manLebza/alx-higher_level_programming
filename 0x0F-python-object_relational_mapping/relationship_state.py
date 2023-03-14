@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ Contains state class and base,instance of declarative_base() """
-from sqlalchemt import Column, Integer, String, MetaData
+from sqlalchemy import Column, Integer, String, MetaData
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 
