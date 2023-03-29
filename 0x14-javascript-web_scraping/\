@@ -2,10 +2,10 @@
 const fs = require('fs');
 const file = process.argv[2];
 
-fs.readFile(file, 'utf8', (error, content) => {
-  if (error) {
+fs.readFile(file, 'utf8', (err, data) => {
+  if (err) {
     console.log(error);
     return;
   }
-    console.log(content);
+    console.log(data);
 });
