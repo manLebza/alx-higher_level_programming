@@ -5,12 +5,12 @@ Module sends a request to the URL and displays:
     - The error code when there is an http error.
 """
 
-import requests
-import sys
+from requests import get
+from sys import argv
 
 if __name__ == "__main__":
-    r = requests.get(sys.argv[1])
-    if r.status_code >= 400:
-        print("Error code: {}".format(r.status_code))
+    req = get(argv[1])
+    if req.status_code >= 400:
+        print("Error code: {}".format(req.status_code))
     else:
-        print(r.text)
+        print(req.text)

@@ -4,12 +4,12 @@ Module snds a request to the URL and displays
 the value of a variable in the response header.
 """
 
-import requests
-import sys
+from requests import get
+from sys import argv
 
 if __name__ == "__main__":
     try:
-        r = requests.get(sys.argv[1])
-        print(r.headers['X-Request-Id'])
-    except:
+        r = get(argv[1])
+        print(r.headers.get(['X-Request-Id']))
+    except IndexError:
         pass

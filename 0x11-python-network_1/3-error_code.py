@@ -5,13 +5,14 @@ the value of the X-Request-Id variable found in the header
 handling HTTP errors.
 """
 
-from urllib import request, errors
-import sys
+from urllib.request import Request, urlopen
+from urllib.error import HTTPError
+from sys import argv
 
 if __name__ == "__main__":
     try:
-        with request.urlopen(sys.argv[1]) as response:
+        with urlopen(argv[1]) as response:
             body = response.read()
             print(body.decode('utf-8'))
-    except error.HTTPError as err:
+    except HTTPError as err:
         print('Error code: {}'.format(err.code))
